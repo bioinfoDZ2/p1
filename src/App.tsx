@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import { ClipboardList, ChefHat, Package, FileText, ChevronRight, CheckCircle, Home, Camera, Upload } from 'lucide-react';
-import ProductionForm from './components/ProductionForm';
 
 interface Section {
   id: string;
@@ -227,12 +226,6 @@ function App() {
               {renderPhotoSection('attesInside')}
             </div>
           </div>
-        </div>
-      );
-    } else if (sectionId === 'production' && startedSections.includes('production')) {
-      return (
-        <div className="mt-6 border-t pt-4">
-          <ProductionForm />
         </div>
       );
     }
